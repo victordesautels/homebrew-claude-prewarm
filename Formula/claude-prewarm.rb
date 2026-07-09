@@ -7,6 +7,9 @@ class ClaudePrewarm < Formula
       using: :git,
       tag:   "v0.4.2-beta"
   license "MIT"
+  # Track the tip of `main` with:  brew install --HEAD claude-prewarm
+  # Refresh to latest main later:  brew upgrade --fetch-HEAD claude-prewarm
+  head "https://github.com/victordesautels/claude-prewarm.git", branch: "main"
 
   depends_on :macos
 
