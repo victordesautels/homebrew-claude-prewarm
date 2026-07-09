@@ -7,7 +7,7 @@ class ClaudePrewarm < Formula
   url "https://github.com/victordesautels/claude-prewarm.git",
       using:  :git,
       branch: "main"
-  version "0.5.0-beta"
+  version "0.5.1-beta"
   license "MIT"
 
   depends_on :macos
