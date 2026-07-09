@@ -1,15 +1,14 @@
 class ClaudePrewarm < Formula
   desc "Keep Claude 5-hour usage windows aligned to your workday"
   homepage "https://github.com/victordesautels/claude-prewarm"
-  # Git tag as the source of truth — no sha256 to maintain. Bump `tag` on each
-  # release. (Optionally pin `revision: "<full-sha>"` for extra integrity.)
+  # The stable spec tracks `main` directly: a plain `brew install claude-prewarm`
+  # installs the latest main — no tag, no `--HEAD`. Pull newer main later with:
+  #   brew reinstall claude-prewarm
   url "https://github.com/victordesautels/claude-prewarm.git",
-      using: :git,
-      tag:   "v0.4.2-beta"
+      using:  :git,
+      branch: "main"
+  version "0.4.2-beta"
   license "MIT"
-  # Track the tip of `main` with:  brew install --HEAD claude-prewarm
-  # Refresh to latest main later:  brew upgrade --fetch-HEAD claude-prewarm
-  head "https://github.com/victordesautels/claude-prewarm.git", branch: "main"
 
   depends_on :macos
 
