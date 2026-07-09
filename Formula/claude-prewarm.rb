@@ -5,7 +5,7 @@ class ClaudePrewarm < Formula
   # release. (Optionally pin `revision: "<full-sha>"` for extra integrity.)
   url "https://github.com/victordesautels/claude-prewarm.git",
       using: :git,
-      tag:   "v0.4.1-beta"
+      tag:   "v0.4.2-beta"
   license "MIT"
 
   depends_on :macos
