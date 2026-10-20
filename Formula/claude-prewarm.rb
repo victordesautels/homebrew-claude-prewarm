@@ -5,9 +5,9 @@ class ClaudePrewarm < Formula
   # (.github/workflows/release.yml) whenever VERSION changes on main. It pins a
   # tagged release tarball + sha256 so plain `brew upgrade` sees a version delta.
   # Do not hand-edit here — edit packaging/claude-prewarm.rb.tmpl in the main repo.
-  url "https://github.com/victordesautels/claude-prewarm/archive/refs/tags/v0.5.7-beta.tar.gz"
-  sha256 "38220b6c05c6121d8ad14bb593db757603d1be3c42e50c343bb89053cb0a1de0"
-  version "0.5.7-beta"
+  url "https://github.com/victordesautels/claude-prewarm/archive/refs/tags/v0.5.8-beta.tar.gz"
+  sha256 "c8388bc98d3ce16c87238456cb540bf537a92d6691594ff007eded866e6e03f6"
+  version "0.5.8-beta"
   license "MIT"
 
   # `brew install --HEAD claude-prewarm` still tracks main for the impatient.
